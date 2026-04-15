@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Colab](https://img.shields.io/badge/Run%20in-Colab-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+# 📊 A/B Testing Case Study – Homepage “SHOP NOW” & “SEE DEALS” Button Analysis
+
 # 📊 A/B Testing Eniac_Case Study – Homepage “SHOP NOW” & “SEE DEALS” Button Analysis
 This project analyzes four homepage CTA button designs (Versions A, B, C, and D) to determine which version drives the highest user engagement. The analysis uses real visitor and click data from the ENIAC case study and applies statistical testing to identify the winning variant.
 
