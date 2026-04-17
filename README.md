@@ -1,12 +1,14 @@
 📊 ENIAC A/B Testing – Homepage Experiment
 Statistical Analysis • Chi‑Square Test • CTR Evaluation
-🏷️ Badges
-markdown
+
+🏷️ Badges markdown
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Colab](https://img.shields.io/badge/Run%20in-Colab-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ![Analysis](https://img.shields.io/badge/Method-A/B%20Testing-purple)
+
 🎯 Project Overview
 This project analyzes four homepage versions (A, B, C, D) from the ENIAC case study to determine which design performs best.
 The notebook includes:
