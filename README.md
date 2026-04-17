@@ -1,138 +1,85 @@
-📊 ENIAC A/B Testing – Homepage Experiment
-Statistical Analysis • Chi‑Square Test • CTR Evaluation
-
-
-🏷️ Badges
-
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Colab](https://img.shields.io/badge/Run%20in-Colab-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ![Analysis](https://img.shields.io/badge/Method-A/B%20Testing-purple)
 
+📊 Eniac Homepage A/B Testing — Experiment Analysis
+A complete analysis of four homepage variants (A, B, C, D) using click‑through rate (CTR), chi‑square hypothesis testing, post‑hoc comparisons, and user drop‑off metrics.
+This project evaluates which homepage design drives the highest engagement and provides actionable business recommendations.
 
-🎯 Project Overview
+🚀 Project Overview
+This project analyzes user behavior across four homepage versions to determine which design performs best.
+The analysis includes:
 
-Analyzed four homepage versions (A, B, C, D) from the ENIAC case study
+CTR comparison across variants
 
-Evaluated user engagement using CTR, drop‑off rate, and homepage‑return rate
+Chi‑square test for statistical significance
 
-Performed statistical testing to determine significant performance differences
+Post‑hoc pairwise comparisons
 
-Created visualizations to support insights
+Drop‑off analysis across funnel steps
 
-Identified the best‑performing version for deployment
+Visualizations for CTR and drop‑off trends
 
+Final business recommendation
+
+🧠 Key Findings
+Variant C achieved the highest CTR.
+
+Chi‑square test showed a statistically significant difference between variants.
+
+Post‑hoc tests confirmed C outperforms A and B.
+
+Drop‑off analysis revealed C retains users better through the funnel.
+
+Recommendation: Roll out Variant C as the new homepage.
+
+📂 Project Structure
+Code
+├── data/                # Raw and cleaned datasets
+├── visuals/             # Charts and plots
+├── notebook.ipynb       # Full analysis in Python
+└── README.md            # Project documentation
 🧪 Methods Used
+Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn)
 
-🔹 1. Data Cleaning & Preparation
+CTR calculation
 
-Loaded CSV files for all four versions
+Chi‑square test of independence
 
--->Extracted:
-    
-    Total visits
+Bonferroni‑corrected post‑hoc tests
 
-    CTA clicks
+Funnel drop‑off analysis
 
--->Calculated:
+Data visualization
 
-    CTR
-
-Prepared contingency tables for chi‑square testing
-
-🔹 2. Statistical Testing
-
-Global Chi‑Square Test to check if differences between versions are statistically significant
-
-Post‑hoc Pairwise Chi‑Square Tests with Bonferroni correction
-
-Identified which version pairs differ significantly
-
-🔹 3. Visualization
-
+📈 Visuals Included
 CTR bar chart
 
-CTR with 95% confidence intervals
+Drop‑off funnel chart
 
-Drop‑off rate comparison
+Variant‑wise comparison plots
 
-Homepage‑return rate comparison
+🧩 Business Impact
+Implementing the winning variant can lead to:
 
-📊 Key Results
+Higher homepage engagement
 
-✔ Global Chi‑Square Test
+Improved conversion rates
 
-p‑value < 0.05
+Better user retention
 
-Conclusion: Significant difference exists between the four versions
+More efficient marketing spend
 
-✔ Post‑hoc Pairwise Results
+▶️ How to Run
+Clone the repository
 
-Significant differences
+Install dependencies
 
-A > B
+Open the notebook
 
-A > D
-
-C > B
-
-C > D
-
-Not significant
-
-A vs C → Similar CTR performance
-
-✔ CTR & Drop‑off Insights
-
-Version C has the highest CTR
-
-Version A is very close, and the difference is not statistically significant
-
-Version A has better behavioral metrics (lower drop‑off, higher homepage‑return rate)
-
-Versions B and D underperform consistently
-
-🏆 Final Recommendation
-
-⭐ Adopt Version A as the new homepage CTA button.
-
-Why Version A wins
-
-CTR statistically equal to Version C
-
-Lowest drop‑off rate among top performers
-
-Highest homepage‑return rate
-
-Strong, consistent performance across all metrics
-
-🛠 Tools & Technologies
-markdown
-- Python  
-- Pandas  
-- NumPy  
-- SciPy  
-- Seaborn / Matplotlib  
-- Google Colab  
-- GitHub
--  
-🚀 How to Run the Notebook
-
-Open the notebook in Google Colab
-
-Upload the CSV files from the Data/ folder
-
-Run all cells sequentially
-
-Review statistical outputs and visualizations
-
-👩‍💻 Author
-
-Pavani Bandla 
-
-A/B Testing & Data Analysis – ENIAC Case Study
-
+Run all cells to reproduce the analysis
 
 
 
