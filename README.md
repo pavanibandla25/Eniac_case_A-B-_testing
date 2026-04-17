@@ -1,102 +1,108 @@
+📊 ENIAC A/B Testing – Homepage Experiment
+Statistical Analysis • Chi‑Square Test • CTR Evaluation
+🏷️ Badges
+markdown
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Colab](https://img.shields.io/badge/Run%20in-Colab-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pavanibandla25/Eniac_case_A-B-_testing/blob/main/Eniac_case_A_B_test_structure.ipynb)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![Analysis](https://img.shields.io/badge/Method-A/B%20Testing-purple)
+🎯 Project Overview
+This project analyzes four homepage versions (A, B, C, D) from the ENIAC case study to determine which design performs best.
+The notebook includes:
+
+Data cleaning
+
+CTR & drop‑off calculations
+
+Global chi‑square test
+
+Post‑hoc pairwise testing
+
+Visualizations
+
+Final recommendation
+
+🧪 Methods Used
+1. Data Cleaning & Preparation
+Loaded CSV files for all four versions
+
+Extracted visits, clicks, and drop‑off counts
+
+Calculated CTR rates
+
+Prepared contingency tables for chi‑square testing
+
+2. Statistical Testing
+Global Chi‑Square Test to check if differences between versions are statistically significant
+
+Post‑hoc Pairwise Chi‑Square Tests with Bonferroni correction
+
+Identified which version pairs differ significantly
+
+3. Visualization
+CTR bar chart
+CTR with 95% confidence intervals  from eniacs case study.
+Drop‑off Rate
+Home-page returh Rate 
 
 
-# 📊 A/B Testing Case Study – Homepage “SHOP NOW” & “SEE DEALS” Button Analysis
-This project analyzes four homepage CTA button designs (Versions A, B, C, and D) to determine which version drives the highest user engagement. The analysis uses real visitor and click data from the ENIAC case study and applies statistical testing to identify the winning variant.
+📊 Key Results
+✔ Global Chi‑Square Test
+p‑value < 0.05
+Conclusion: Significant difference exists between the four versions
 
---## 🔍 Project Overview
-The goal of this A/B test is to evaluate how different button designs impact user behavior on the homepage.  
-We compare four versions:
+✔ Post‑hoc Pairwise Results
+Significant differences
+A > B
+A > D
+C > B
+C > D
 
-- **Version A**
-- **Version B**
-- **Version C**
-- **Version D**
+Not significant
+A vs C → Similar CTR performance
 
-Each version received **different numbers of visitors**, and user actions (clicks, drop‑offs) were recorded.
+✔ CTR & Drop‑off Insights
+Version C has the highest CTR
+Version A is very close, and the difference is not statistically significant
+Version A has better behavioral metrics (lower drop‑off, higher homepage‑return rate)
+Versions B and D underperform consistently
 
----
-## 📈 Methods Used
+🏆 Final Recommendation
+⭐ Adopt Version A as the new homepage CTA button.
 
-### **1. Data Cleaning & Preparation**
-- Loaded CSV files for all four versions  
-- Extracted visits, clicks, and drop‑off counts  
-- Calculated CTR and drop‑off rates  
+Why Version A wins
+CTR statistically equal to Version C
+Lowest drop‑off rate among top performers
+Highest homepage‑return rate
+Strong, consistent performance across all metrics
 
-### **2. Statistical Testing**
-- **Global Chi‑Square Test** to check if differences between versions are statistically significant  
-- **Post‑hoc Pairwise Chi‑Square Tests** with Bonferroni correction to identify which versions differ  
-
-### **3. Visualization**
-- CTR bar chart  
-- Drop‑off bar chart  
-- CTR with 95% confidence intervals  
-
----
-
-## 📊 Key Results
-
-### **✔ Global Chi‑Square Test**
-- p‑value < 0.05  
-- **Conclusion:** There is a statistically significant difference between the four versions.
-
-### **✔ Post‑hoc Pairwise Results**
-Significant differences:
-- C > B  
-- C > D  
-- A > B  
-- A > D  
-
-Not significant:
-- A vs C (similar performance)
-
-### **✔ CTR & Drop‑off Insights**
-- **Version C has the highest CTR**
-- **Version C has the lowest drop‑off**
-- B and D consistently underperform
-
----
-
-## 🏆 Final Recommendation
-
-### **Adopt Version C as the new homepage CTA button.**
-
-**Why Version C wins:**
-- Highest click‑through rate  
-- Lowest drop‑off rate  
-- Statistically significant improvement over B and D  
-- Strong, consistent performance across all metrics  
-
----
-
-## 🛠 Tools & Technologies
-
+🛠 Tools & Technologies
+markdown
 - Python  
 - Pandas  
 - NumPy  
 - SciPy  
 - Seaborn / Matplotlib  
 - Google Colab  
-- GitHub  
+- GitHub
+  
+   
+🚀 How to Run the Notebook
+Open the notebook in Google Colab
+Upload the CSV files from the Data/ folder
+Run all cells sequentially
+Review statistical outputs and visualizations
 
----
 
-## 📌 How to Run the Notebook
+👩‍💻 Author
+Pavani Bandla  
+A/B Testing & Data Analysis – ENIAC Case Study
 
-1. Open the notebook in **Google Colab**  
-2. Upload the CSV files from the `Data/` folder  
-3. Run all cells sequentially  
-4. View statistical results and charts  
 
----
 
-## 👩‍💻 Author
 
-**Pavani Bandla**  
-A/B Testing & Data Analysis – ENIAC Case Study  
+
 
 
 
