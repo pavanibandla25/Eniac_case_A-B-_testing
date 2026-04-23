@@ -28,13 +28,26 @@ Source files:  Notebooks/Eniac_case_A_B_test_structure.ipynb  and CSVs reference
 ## 📊 Key results
 
 
-CTRs (rounded): A=2.02% | B=1.14% | C=2.12% | D=0.76%
-Global chi-square test: chi2 = 224.0188; p-value ≈ 2.716e-48 → reject H₀ (differences exist among variants).
-Pairwise (Bonferroni-corrected) chi-square results: A vs B (significant), A vs C (NOT significant, p≈0.446), A vs D (significant), B vs C (significant), B vs D (significant), C vs D (significant).
+-- CTRs (rounded): A=2.02% | B=1.14% | C=2.12% | D=0.76%
+
+-- Global chi-square test: chi2 = 224.0188; p-value ≈ 2.716e-48 → reject H₀ (differences exist among variants).
+
+-- Pairwise (Bonferroni-corrected) chi-square results : A vs B (significant), A vs C (NOT significant, p≈0.446), A vs D (significant), B vs C (significant), B vs D (significant), C vs D (significant).
+
+📊 Pairwise Chi‑Square Test Results
+
+| Comparison | p-value | Result          |
+|-----------|---------|-----------------|
+| A vs B    | 0.000   | 🔥 Significant  |
+| A vs C    | 0.446   | ✅ Not Significant |
+| A vs D    | 0.000   | 🔥 Significant  |
+| B vs C    | 0.000   | 🔥 Significant  |
+| B vs D    | 0.000   | 🔥 Significant  |
+| C vs D    | 0.000   | 🔥 Significant  |
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-Interpretation:  Only A and C are statistically indistinguishable on CTR.
+## Interpretation :   Only A and C are statistically indistinguishable on CTR.
 95% confidence intervals for CTRs overlap between A and C, supporting the same conclusion.
 
 
@@ -54,19 +67,6 @@ Interpretation:  Only A and C are statistically indistinguishable on CTR.
 ## 🧠 Decision Logic
 Use global chi-square to detect any difference across all variants.
 Run Bonferroni-corrected pairwise chi-square tests to locate significant differences.
-
-📊 Pairwise Chi‑Square Test Results
-
-| Comparison | p-value | Result          |
-|-----------|---------|-----------------|
-| A vs B    | 0.000   | 🔥 Significant  |
-| A vs C    | 0.446   | ✅ Not Significant |
-| A vs D    | 0.000   | 🔥 Significant  |
-| B vs C    | 0.000   | 🔥 Significant  |
-| B vs D    | 0.000   | 🔥 Significant  |
-| C vs D    | 0.000   | 🔥 Significant  |
-
-
 
 When CTR ties occur (A vs C), use behavioral metrics (drop-off rate, homepage-return rate) to break ties.
 Version A wins due to balanced performance across CTR and behavioral metrics.
