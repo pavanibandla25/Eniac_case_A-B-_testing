@@ -16,7 +16,7 @@
 Version A is the recommended homepage. Although Version C has the highest raw CTR, its CTR is statistically indistinguishable from A and A outperforms C on behavioral metrics (notably lower drop-off and higher homepage-return rate), making A the strongest balanced choice for deployment.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-📁 Data used
+## 📁 Data used
 
 Visits: A=25,326;  B=24,747;  C=24,876;  D=25,233
 CTA clicks :  A=512;  B=281;  C=527;  D=193
