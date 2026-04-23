@@ -6,93 +6,66 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)  
 ![Updated](https://img.shields.io/badge/Last_Updated-April_2026-purple)
 
-A complete A/B testing analysis comparing four homepage versions (A, B, C, D).
-This project evaluates user engagement using CTR, chi‑square testing, post‑hoc comparisons, and drop‑off metrics.
-The goal is to identify the best‑performing homepage version for deployment.
 
-🎯 Project Overview
-This experiment analyzes how users interact with four different homepage designs.
-The dataset includes impressions, clicks, and drop‑offs for each version.
+A/B Testing Case Study ��� Homepage Variants A, B, C, D
 
-The objective is to determine:
+This repository contains an A/B test analysis comparing four homepage variants (A, B, C, D). The analysis evaluates click-through rate (CTR), performs a global chi-square test and Bonferroni-corrected pairwise chi-square tests, and inspects behavioral metrics (drop-off and homepage-return rates) to determine the best-performing design.
 
-Which version has the highest engagement
+TL;DR  —  Recommendation
 
-Whether differences are statistically meaningful
+Version A is the recommended homepage. Although Version C has the highest raw CTR, its CTR is statistically indistinguishable from A and A outperforms C on behavioral metrics (notably lower drop-off and higher homepage-return rate), making A the strongest balanced choice for deployment.
 
-Which version should be recommended for business use
+Data used
 
-🧪 Methodology
-CTR Analysis
-CTR was calculated for each version to measure user engagement.
+Visits: A=25,326;  B=24,747;  C=24,876;  D=25,233
+CTA clicks :  A=512;  B=281;  C=527;  D=193
 
-Chi‑Square Test
-A global chi‑square test was used to check whether the differences between versions were statistically significant.
+Source files: Notebooks/Eniac_case_A_B_test_structure .ipynb and CSVs referenced in the notebook (Google Drive links).
 
-Post‑Hoc Testing
-Pairwise comparisons were performed to identify which versions differ from each other.
+Key results
 
-Drop‑Off Analysis
-Drop‑off rates were evaluated to understand user disengagement.
+CTRs (rounded): A=2.02% | B=1.14% | C=2.12% | D=0.76%
+Global chi-square test: chi2 = 224.0188; p-value ≈ 2.716e-48 → reject H₀ (differences exist among variants).
+Pairwise (Bonferroni-corrected) chi-square results: A vs B (significant), A vs C (NOT significant, p≈0.446), A vs D (significant), B vs C (significant), B vs D (significant), C vs D (significant).
 
-Visualizations
-Charts were created to compare CTR and drop‑off across all versions.
+Interpretation:  Only A and C are statistically indistinguishable on CTR.
+95% confidence intervals for CTRs overlap between A and C, supporting the same conclusion.
+Decision logic
 
-🏆 Final Result — Version A is the Winner
-Based on the analysis:
+Use global chi-square to detect any difference across all variants.
+Run Bonferroni-corrected pairwise chi-square tests to locate significant differences.
 
-Version A shows the strongest overall performance
-
-It maintains a solid CTR
-
-It has a favorable drop‑off rate
-
-It performs consistently across statistical tests
-
-Version A is recommended as the final homepage design.
-
-📈 Key Insights
-There are meaningful differences between the homepage versions
-
-Version A performs reliably across all metrics
-
-Other versions show strengths, but Version A provides the best balance
-
-Version A aligns well with business goals and user behavior
-
-🗂 Repository Structure
-
-📁 Eniac_case_A-B-_testing
-│
-├── 📄 Eniac_AB_Test.ipynb      # Main analysis notebook
-├── 📄 dataset.csv              # Dataset (if included)
-├── 📄 README.md                # Documentation
-└── 📁 images/                  # Visualizations (optional)
+When CTR ties occur (A vs C), use behavioral metrics (drop-off rate, homepage-return rate) to break ties.
+Version A wins due to balanced performance across CTR and behavioral metrics.
 
 
-🚀 How to Run the Notebook
-Clone the repository
-git clone https://github.com/pavanibandla25/Eniac_case_A-B-_testing (github.com in Bing)
+How to run
+Clone the repo:
+git clone https://github.com/pavanibandla25/Eniac_case_A-B-_testing
 
-Install required libraries
-pip install pandas numpy scipy matplotlib seaborn
+Install dependencies:
+pip install -r requirements.txt
+(or pip install pandas numpy scipy matplotlib seaborn)
 
-Open the notebook in Jupyter, VS Code, or Google Colab.
+Open the notebook in Jupyter/Colab/VS Code: Notebooks/Eniac_case_A_B_test_structure .ipynb
 
-🧠 Skills Demonstrated
-A/B Testing
+Files of interest
+Notebooks/Eniac_case_A_B_test_structure .ipynb — main analysis and charts
 
-Statistical Testing
+Data/ (if present) — CSV files used by the notebook
 
-Python (pandas, numpy, scipy)
+README.md — this file
 
-Data Visualization (matplotlib, seaborn)
+Notes
+The notebook sets alpha = 0.10 in one cell but uses alpha = 0.05 and Bonferroni correction for pairwise testing; 
+the effective threshold for pairwise tests is 0.05/6.
+Some pairwise p-values are displayed rounded to three decimals ("0.000") in the notebook; 
+exact p-values can be produced by re-running the notebook or using a small helper script.
 
-Data Cleaning
+Next steps (suggested)
 
-Business Insight Generation
+(Optional) Re-run pairwise tests to save exact p-values in the notebook output.
+Create a short slide or README summary image for stakeholders with the contingency table, CTRs+CI, chi-square statistic, and recommendation.
 
-👩‍💻 Author
-Pavani Bandla  
-Data Analytics Trainee | WBS Coding School
-Focused on Python, A/B Testing, Data Visualization, and Statistical Analysis.
+Pavani Bandla — Data Analytics Trainee | WBS Coding School
+
