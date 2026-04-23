@@ -44,7 +44,7 @@ Interpretation:  Only A and C are statistically indistinguishable on CTR.
 
 
 
-<img width="768" height="528" alt="image" src="https://github.com/user-attachments/assets/d308c178-d267-46d2-a286-26e27c4e51a0" />
+<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/d308c178-d267-46d2-a286-26e27c4e51a0" />
 
 
 
@@ -56,8 +56,28 @@ Interpretation:  Only A and C are statistically indistinguishable on CTR.
 Use global chi-square to detect any difference across all variants.
 Run Bonferroni-corrected pairwise chi-square tests to locate significant differences.
 
+📊 Pairwise Chi‑Square Test Results
+
+| Comparison | p-value | Result          |
+|-----------|---------|-----------------|
+| A vs B    | 0.000   | 🔥 Significant  |
+| A vs C    | 0.446   | ✅ Not Significant |
+| A vs D    | 0.000   | 🔥 Significant  |
+| B vs C    | 0.000   | 🔥 Significant  |
+| B vs D    | 0.000   | 🔥 Significant  |
+| C vs D    | 0.000   | 🔥 Significant  |
+
+
+
 When CTR ties occur (A vs C), use behavioral metrics (drop-off rate, homepage-return rate) to break ties.
 Version A wins due to balanced performance across CTR and behavioral metrics.
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/d20c7f39-87ee-46b5-934f-4fb2444bb0b3" />      <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/13183895-4cad-46c8-b4c1-5926f1d9df82" />
+
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
