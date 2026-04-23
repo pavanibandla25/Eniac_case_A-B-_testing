@@ -1,87 +1,98 @@
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Colab](https://img.shields.io/badge/Run%20in-Colab-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-![Analysis](https://img.shields.io/badge/Method-A/B%20Testing-purple)
+📊 A/B Testing Case Study – Homepage Versions A/B/C/D
 
-📊 Eniac Homepage A/B Testing — Experiment Analysis
-A complete analysis of four homepage variants (A, B, C, D) using click‑through rate (CTR), chi‑square hypothesis testing, post‑hoc comparisons, and user drop‑off metrics.
-This project evaluates which homepage design drives the highest engagement and provides actionable business recommendations.
+![Python](https://img.shields.io/badge/Python-3.10-blue)  
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)  
+![AB Testing](https://img.shields.io/badge/A%2FB_Testing-Statistical_Analysis-green)  
+![License](https://img.shields.io/badge/License-MIT-yellow)  
+![Updated](https://img.shields.io/badge/Last_Updated-April_2026-purple)
 
-🚀 Project Overview
-This project analyzes user behavior across four homepage versions to determine which design performs best.
-The analysis includes:
+A complete A/B testing analysis comparing four homepage versions (A, B, C, D).
+This project evaluates user engagement using CTR, chi‑square testing, post‑hoc comparisons, and drop‑off metrics.
+The goal is to identify the best‑performing homepage version for deployment.
 
-CTR comparison across variants
+🎯 Project Overview
+This experiment analyzes how users interact with four different homepage designs.
+The dataset includes impressions, clicks, and drop‑offs for each version.
 
-Chi‑square test for statistical significance
+The objective is to determine:
 
-Post‑hoc pairwise comparisons
+Which version has the highest engagement
 
-Drop‑off analysis across funnel steps
+Whether differences are statistically meaningful
 
-Visualizations for CTR and drop‑off trends
+Which version should be recommended for business use
 
-Final business recommendation
+🧪 Methodology
+CTR Analysis
+CTR was calculated for each version to measure user engagement.
 
-🧠 Key Findings
-Variant C achieved the highest CTR.
+Chi‑Square Test
+A global chi‑square test was used to check whether the differences between versions were statistically significant.
 
-Chi‑square test showed a statistically significant difference between variants.
+Post‑Hoc Testing
+Pairwise comparisons were performed to identify which versions differ from each other.
 
-Post‑hoc tests confirmed C outperforms A and B.
+Drop‑Off Analysis
+Drop‑off rates were evaluated to understand user disengagement.
 
-Drop‑off analysis revealed C retains users better through the funnel.
+Visualizations
+Charts were created to compare CTR and drop‑off across all versions.
 
-Recommendation: Roll out Variant C as the new homepage.
+🏆 Final Result — Version A is the Winner
+Based on the analysis:
 
-📂 Project Structure
-Code
-├── data/                # Raw and cleaned datasets
-├── visuals/             # Charts and plots
-├── notebook.ipynb       # Full analysis in Python
-└── README.md            # Project documentation
-🧪 Methods Used
-Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn)
+Version A shows the strongest overall performance
 
-CTR calculation
+It maintains a solid CTR
 
-Chi‑square test of independence
+It has a favorable drop‑off rate
 
-Bonferroni‑corrected post‑hoc tests
+It performs consistently across statistical tests
 
-Funnel drop‑off analysis
+Version A is recommended as the final homepage design.
 
-Data visualization
+📈 Key Insights
+There are meaningful differences between the homepage versions
 
-📈 Visuals Included
-CTR bar chart
+Version A performs reliably across all metrics
 
-Drop‑off funnel chart
+Other versions show strengths, but Version A provides the best balance
 
-Variant‑wise comparison plots
+Version A aligns well with business goals and user behavior
 
-🧩 Business Impact
-Implementing the winning variant can lead to:
+🗂 Repository Structure
 
-Higher homepage engagement
+📁 Eniac_case_A-B-_testing
+│
+├── 📄 Eniac_AB_Test.ipynb      # Main analysis notebook
+├── 📄 dataset.csv              # Dataset (if included)
+├── 📄 README.md                # Documentation
+└── 📁 images/                  # Visualizations (optional)
 
-Improved conversion rates
 
-Better user retention
-
-More efficient marketing spend
-
-▶️ How to Run
+🚀 How to Run the Notebook
 Clone the repository
+git clone https://github.com/pavanibandla25/Eniac_case_A-B-_testing (github.com in Bing)
 
-Install dependencies
+Install required libraries
+pip install pandas numpy scipy matplotlib seaborn
 
-Open the notebook
+Open the notebook in Jupyter, VS Code, or Google Colab.
 
-Run all cells to reproduce the analysis
+🧠 Skills Demonstrated
+A/B Testing
 
+Statistical Testing
 
+Python (pandas, numpy, scipy)
 
+Data Visualization (matplotlib, seaborn)
 
+Data Cleaning
 
+Business Insight Generation
+
+👩‍💻 Author
+Pavani Bandla  
+Data Analytics Trainee | WBS Coding School
+Focused on Python, A/B Testing, Data Visualization, and Statistical Analysis.
