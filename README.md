@@ -1,4 +1,4 @@
-📊 A/B Testing Case Study – Homepage Versions A/B/C/D
+## 📊 A/B Testing Case Study – Homepage Versions A/B/C/D
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)  
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)  
@@ -21,11 +21,11 @@ Version A is the recommended homepage. Although Version C has the highest raw CT
 Visits: A=25,326;  B=24,747;  C=24,876;  D=25,233
 CTA clicks :  A=512;  B=281;  C=527;  D=193
 
-Source files: Notebooks/Eniac_case_A_B_test_structure .ipynb and CSVs referenced in the notebook (Google Drive links).
+Source files:  Notebooks/Eniac_case_A_B_test_structure.ipynb  and CSVs referenced in the notebook (Google Drive link ).
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-📊 Key results
+## 📊 Key results
 
 
 CTRs (rounded): A=2.02% | B=1.14% | C=2.12% | D=0.76%
@@ -99,7 +99,7 @@ Open the notebook in Jupyter/Colab/VS Code: Notebooks/Eniac_case_A_B_test_struct
 ## 📂Files of interest
 
 - Notebooks/Eniac_case_A_B_test_structure .ipynb — main analysis and charts
-- [Data/](Data/) — CSV files used by the notebook 
+- [Data/](Data/) — CSV files used by the notebook
 - README.md — this file
 
 ---------------------------------------------------------------------------------------------------------------------------------
