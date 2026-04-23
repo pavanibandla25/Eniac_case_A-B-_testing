@@ -7,12 +7,11 @@
 ![Updated](https://img.shields.io/badge/Last_Updated-April_2026-purple)
 
 
- 📊 A/B Testing Case Study  ���   Homepage Variants A, B, C, D
-
-This repository contains an A/B test analysis comparing four homepage variants (A, B, C, D). The analysis evaluates click-through rate (CTR), performs a global chi-square test and Bonferroni-corrected pairwise chi-square tests, and inspects behavioral metrics (drop-off and homepage-return rates) to determine the best-performing design.
+## 🎯 This repository contains an A/B test analysis comparing four homepage variants (A, B, C, D). The analysis evaluates click-through rate (CTR), performs a global chi-square test and Bonferroni-corrected pairwise chi-square tests, and inspects behavioral metrics (drop-off and homepage-return rates) to determine the best-performing design.
 
 --------------------------------------------------------------------------------------------------------------------------------
-🔍 TL;DR  —  Recommendation
+
+## 🔍 TL;DR  —  Recommendation
 
 Version A is the recommended homepage. Although Version C has the highest raw CTR, its CTR is statistically indistinguishable from A and A outperforms C on behavioral metrics (notably lower drop-off and higher homepage-return rate), making A the strongest balanced choice for deployment.
 
@@ -99,12 +98,9 @@ Open the notebook in Jupyter/Colab/VS Code: Notebooks/Eniac_case_A_B_test_struct
 ---------------------------------------------------------------------------------------------------------------------------------
 ## 📂Files of interest
 
--Notebooks/Eniac_case_A_B_test_structure .ipynb — main analysis and charts
-
-
+- Notebooks/Eniac_case_A_B_test_structure .ipynb — main analysis and charts
 - [Data/](Data/) — CSV files used by the notebook 
-
--README.md — this file
+- README.md — this file
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## 📝Notes
@@ -112,6 +108,13 @@ The notebook sets alpha = 0.10 in one cell but uses alpha = 0.05 and Bonferroni 
 the effective threshold for pairwise tests is 0.05/6.
 Some pairwise p-values are displayed rounded to three decimals ("0.000") in the notebook; 
 exact p-values can be produced by re-running the notebook or using a small helper script.
+
+---------------------------------------------------------------------------------------------------------------------------------
+## 💡 Business Impact 
+
+Choosing Version A improves user engagement while minimizing drop-off, 
+leading to a more stable and scalable homepage experience.
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ## 🚀Next steps (suggested)
