@@ -40,12 +40,15 @@ Interpretation:  Only A and C are statistically indistinguishable on CTR.
 
 
 
-| Variant | CTR | Significant vs A? |
-| --- | --- | --- |
-| A | 2.02% | — |
-| B | 1.14% | Yes |
-| C | 2.12% | No |
-| D | 0.76% | Yes |
+
+
+
+
+<img width="768" height="528" alt="image" src="https://github.com/user-attachments/assets/d308c178-d267-46d2-a286-26e27c4e51a0" />
+
+
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
