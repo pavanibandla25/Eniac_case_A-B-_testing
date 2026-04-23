@@ -80,7 +80,7 @@ Version A wins due to balanced performance across CTR and behavioral metrics.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-## 🛠️How to run
+## 🛠️ How to run
 
 Clone the repo:
 
@@ -96,14 +96,14 @@ pip install -r requirements.txt
 Open the notebook in Jupyter/Colab/VS Code: Notebooks/Eniac_case_A_B_test_structure .ipynb
 
 ---------------------------------------------------------------------------------------------------------------------------------
-## 📂Files of interest
+## 📂 Files of interest
 
-- Notebooks/Eniac_case_A_B_test_structure .ipynb — main analysis and charts
+- Notebooks/Eniac_case_A_B_test_structure.ipynb — main analysis and charts
 - [Data/](Data/) — CSV files used by the notebook
 - README.md — this file
 
 ---------------------------------------------------------------------------------------------------------------------------------
-## 📝Notes
+## 📝 Notes
 The notebook sets alpha = 0.10 in one cell but uses alpha = 0.05 and Bonferroni correction for pairwise testing; 
 the effective threshold for pairwise tests is 0.05/6.
 Some pairwise p-values are displayed rounded to three decimals ("0.000") in the notebook; 
@@ -117,7 +117,7 @@ leading to a more stable and scalable homepage experience.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
-## 🚀Next steps (suggested)
+## 🚀 Next steps (suggested)
 
 (Optional)  Re-run pairwise tests to save exact p-values in the notebook output.
 Create a short slide or README summary image for stakeholders with the contingency table, CTRs+CI, chi-square statistic, and recommendation.
