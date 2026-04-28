@@ -24,6 +24,7 @@ Eniac wants to optimize homepage engagement and reduce user friction. This A/B t
 # 📁 Data used
 
 Visits: A=25,326;  B=24,747;  C=24,876;  D=25,233
+
 clicks :  A=512;  B=281;  C=527;  D=193
 
 📁 Data Source: [Google Drive Link]( Notebooks/Eniac_case_A_B_test_structure.ipynb)
