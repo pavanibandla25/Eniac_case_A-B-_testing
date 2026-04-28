@@ -1,7 +1,10 @@
 # 📊 A/B Testing Case Study – Homepage Versions A/B/C/D
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_NOTEBOOK_URL)
+
+
 
 
 
@@ -31,7 +34,7 @@ clicks :  A=512;  B=281;  C=527;  D=193
 # 📊 Key results
 
 
-- CTRs (rounded): A=2.02% | B=1.14% | C=2.12% | D=0.76%
+- CTRs (rounded) : A=2.02% | B=1.14% | C=2.12% | D=0.76%
 
 - Global chi-square test:$\chi^2 = 224.02$; p-value < 0.001 → reject H₀ (differences exist among variants).
 
